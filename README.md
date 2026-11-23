@@ -12,7 +12,7 @@ For each nonnegative integer `n`, reduce
 P_n(X)=1+X^n+X^{2n+2}
 \]
 
-using `X² = X + 1`. Write the unique reduced representative as `u_n + a_n X`. The sequence A192473 is the coefficient `a_n` of `X`.
+using `X² = X + 1`. Write the unique reduced representative as `u_n + a_n X`. The auxiliary coefficient sequence is `a_n`. **OEIS A192473 has offset 1 and starts at polynomial index 1:** OEIS `A192473(n) = a_n` for `n >= 1`. The auxiliary value `a_0 = 1` is not part of the OEIS sequence. The OEIS initial values are `4, 9, 23, 58, ...`.
 
 Barker's conjecture is
 
@@ -50,7 +50,7 @@ Consequently,
 a_{n+4}-4a_{n+3}+3a_{n+2}+2a_{n+1}-a_n=0,
 \]
 
-which is exactly the conjectured recurrence.
+which proves the OEIS conjectured recurrence for every OEIS index `n >= 5`.
 
 ## Lean formalization
 
